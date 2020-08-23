@@ -20,6 +20,6 @@ namespace Storage.Models
         public int Consumedcosts { get; set; }//成本消耗
         public int Remain { get; set; }//本月结存
         public double Stockprice { get; set; }//库存资金
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; }//删除
     }
 }
