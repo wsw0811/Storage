@@ -12,6 +12,9 @@ using Microsoft.Extensions.Hosting;
 
 namespace Storage
 {
+    /// <summary>
+    /// Startup是Kestrel跟MVC的关联
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -45,7 +48,9 @@ namespace Storage
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+            
 
             app.UseRouting();
 
